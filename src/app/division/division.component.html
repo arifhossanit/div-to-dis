@@ -1,0 +1,9 @@
+<form #f="ngForm" (change)="sendDiv(f.value)">
+    <select name="divi" ngModel >
+        <option value="" disabled>select one</option>
+        <option *ngFor="let item of division" value="{{item.id}}">{{item.name}}</option>
+    </select>
+</form>
+<select name="" id="">
+    <option *ngFor="let items of district" value="{{items.id}}">{{items.name}}</option>
+</select>
